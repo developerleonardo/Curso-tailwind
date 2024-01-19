@@ -3,6 +3,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: ["./src/**/*.{html,js}", "./public/index.html"],
+  darkMode: "class",
   theme: {
     fontFamily: {
       Montserrat: ['Montserrat', "sans-serif"]

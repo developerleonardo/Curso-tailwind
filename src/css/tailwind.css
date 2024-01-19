@@ -4,13 +4,13 @@
 
 @layer components {
     .card {
-      @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
+      @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl lg:w-64 lg:h-80 lg:rounded-lg;
     }
     .card > div:first-child {
-      @apply w-full h-3/5 rounded-t-lg bg-cover;
+      @apply w-full h-3/5 rounded-t-lg bg-cover lg:rounded-lg;
     }
     .card > div:nth-child(2) {
-      @apply w-full h-2/5 bg-secondary rounded-b-lg;
+      @apply w-full h-2/5 bg-secondary rounded-b-lg lg:rounded-b-lg dark:bg-gray-700;
     }
     .card > div:nth-child(2) > p:first-child {
       @apply text-white font-bold text-lg px-4 pt-2;
@@ -20,19 +20,19 @@
     }
 
     .card_2 {
-        @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
+        @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl lg:w-64 lg:h-80;
       }
       .card_2 > div:first-child {
         @apply w-full h-3/5 rounded-t-lg bg-cover;
       }
       .card_2 > div:nth-child(2) {
-        @apply w-full h-2/5 bg-white rounded-b-lg;
+        @apply w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800;
       }
       .card_2 > div:nth-child(2) > p:first-child {
-        @apply text-tertiary font-bold text-lg px-4 pt-2;
+        @apply text-tertiary font-bold text-lg px-4 pt-2 dark:text-white;
       }
       .card_2 > div:nth-child(2) > p:nth-child(2) {
-        @apply text-tertiary text-base px-4;
+        @apply text-tertiary text-base px-4 dark:text-white;
       }
 
       .CardTitle {
