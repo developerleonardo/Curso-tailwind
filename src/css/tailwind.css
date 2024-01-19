@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+      @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
+    }
+    .card > div:first-child {
+      @apply w-full h-3/5 rounded-t-lg bg-cover;
+    }
+    .card > div:nth-child(2) {
+      @apply w-full h-2/5 bg-secondary rounded-b-lg;
+    }
+    .card > div:nth-child(2) > p:first-child {
+      @apply text-white font-bold text-lg px-4 pt-2;
+    }
+    .card > div:nth-child(2) > p:nth-child(2) {
+      @apply text-white text-base px-4;
+    }
+
+    .card_2 {
+        @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
+      }
+      .card_2 > div:first-child {
+        @apply w-full h-3/5 rounded-t-lg bg-cover;
+      }
+      .card_2 > div:nth-child(2) {
+        @apply w-full h-2/5 bg-white rounded-b-lg;
+      }
+      .card_2 > div:nth-child(2) > p:first-child {
+        @apply text-tertiary font-bold text-lg px-4 pt-2;
+      }
+      .card_2 > div:nth-child(2) > p:nth-child(2) {
+        @apply text-tertiary text-base px-4;
+      }
+
+      .CardTitle {
+        @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
+      }
+  }
