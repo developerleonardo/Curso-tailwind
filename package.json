@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "minify": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify --watch",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public",
+    "minify": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify --watch"
   },
   "author": "",
   "license": "ISC",
