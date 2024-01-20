@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d public",
     "minify": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify --watch"
   },
   "author": "",
