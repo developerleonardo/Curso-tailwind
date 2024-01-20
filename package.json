@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d public",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "minify": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify --watch"
   },
   "author": "",
