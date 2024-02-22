@@ -23,12 +23,20 @@
             <div class="h-auto w-auto">
                 <p class="text-xl text-primary font-black dark:text-white">Platzi Travel</p>
             </div>
-            <div class="flex space-x-8">
-                <a class="font-bold text-base text-primary dark:text-white" href="#recomendados">Locations</a>
-                <a class="font-bold text-base text-primary dark:text-white" href="#rentas_destacadas">Stays</a>
-                <a class="font-bold text-base text-primary dark:text-white" href="#faqs">FAQS</a>
-                <a class="font-bold text-base text-primary dark:text-white" href="#sobre_nosotros">About Us</a>
-            </div>
+            <ul class="flex space-x-8">
+                <li>
+                    <a class="font-bold text-base text-primary dark:text-white" href="#recomendados">Locations</a>
+                </li>
+                <li>
+                    <a class="font-bold text-base text-primary dark:text-white" href="#rentas_destacadas">Stays</a>
+                </li>
+                <li>
+                    <a class="font-bold text-base text-primary dark:text-white" href="#faqs">FAQS</a>
+                </li>
+                <li>
+                    <a class="font-bold text-base text-primary dark:text-white" href="#sobre_nosotros">About Us</a>
+                </li>
+            </ul>
             <div class="flex space-x-4 justify-center items-center text-lg">
                 <i class="fa-solid fa-magnifying-glass text-primary dark:text-white"></i>
                 <i class="fa-solid fa-moon text-primary dark:text-white toggle"></i>
@@ -46,7 +54,7 @@
                         class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
                         placeholder="San Francisco" type="search" name="" id="">
                     <div class="hidden h-auto lg:w-1/4 lg:flex pb-6">
-                        <p class="text-4xl ml-16 font-bold">Find More Locations like this</p>
+                        <h1 class="text-4xl ml-16 font-bold">Find More Locations like this</h1>
                     </div>
                     <button
                         class="w-48 rounded-full text-lg text-primary shadow-sm font-semibold p-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 ml-4 lg:ml-16 dark:text-black dark:hover:bg-gray-900 dark:hover:text-white">
@@ -59,8 +67,8 @@
             </div>
         </div>
 
-        <div class="p-6" id="recomendados">
-            <p class="text-3xl font-semibold text-primary dark:text-white">Our Recommendations</p>
+        <section class="p-6" id="recomendados">
+            <h2 class="text-3xl font-semibold text-primary dark:text-white">Our Recommendations</h2>
             <div
                 class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden lg:scrollbar-hide">
                 <div class="card">
@@ -113,67 +121,70 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="px-6 w-auto lg:px-6" id="rentas_destacadas">
-            <p class="text-3xl text-primary font-semibold pb-6 mt-2 dark:text-white">Trending Stays</p>
+        <section class="px-6 w-auto lg:px-6" id="rentas_destacadas">
+            <h2 class="text-3xl text-primary font-semibold pb-6 mt-2 dark:text-white">Trending Stays</h2>
             <div class="w-full h-full flex flex-col items-center justify-center">
                 <div class="w-full h-96 bg-chicago bg-cover rounded-xl mb-6 lg:bg-center">
-                    <p class="CardTitle">Chicago</p>
+                    <h3 class="CardTitle">Chicago</h3>
                     <p class="text-sm pl-8 text-white mr-24 lg:text-lg">2 rooms, bathroom and kitchen</p>
                 </div>
                 <div class="lg:flex lg:h-full lg:w-full lg:space-x-4">
                     <div class="w-full h-96 bg-LA bg-cover rounded-xl mb-6 lg:h-auto">
-                        <p class="CardTitle">Los Angeles</p>
+                        <h3 class="CardTitle">Los Angeles</h3>
                         <p class="text-sm pl-8 text-white mr-24 lg:text-lg">4 rooms, 3 bathrooms, kitchen kitchen and
                             private pool.</p>
                     </div>
                     <div class="h-full w-full">
                         <div class="w-full h-96 bg-miami bg-cover rounded-xl mb-6">
-                            <p class="CardTitle">Miami</p>
+                            <h3 class="CardTitle">Miami</h3>
                             <p class="text-sm pl-8 text-white mr-24 lg:text-lg">3 rooms, 2 bathrooms, kitchen, and
                                 amazing sea view</p>
                         </div>
                         <div class="w-full h-96 bg-bali bg-cover rounded-xl mb-6">
-                            <p class="CardTitle">Bali</p>
+                            <h3 class="CardTitle">Bali</h3>
                             <p class="text-sm pl-8 text-white mr-24 lg:text-lg">2 rooms, 2 bathrooms, kitchen and
                                 private pool</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="w-full h-auto" id="faqs">
+        <section class="w-full h-auto" id="faqs">
             <div class="w-full h-auto px-6 flex flex-col space-y-4">
                 <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">FAQS</p>
                 <div>
                     <p class="text-xl font-base text-primary dark:text-white">Payment Methods</p>
-                    <p class="text-base pt-2 dark:text-white"> We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                    <p class="text-base pt-2 dark:text-white"> We accept VISA, MasterCard, American Express, Paypal and
+                        Binance</p>
                 </div>
                 <div>
                     <p class="text-xl font-base text-primary dark:text-white">Cancellation Policy</p>
-                    <p class="text-base pt-2 dark:text-white">You should cancel before a week, otherwise you have to pay a penalty fee
+                    <p class="text-base pt-2 dark:text-white">You should cancel before a week, otherwise you have to pay
+                        a penalty fee
                     </p>
                 </div>
                 <div>
                     <p class="text-xl font-base text-primary dark:text-white">Long Stays</p>
-                    <p class="text-base pt-2 dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolores
+                    <p class="text-base pt-2 dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Nesciunt dolores
                         sapiente praesentium temporibus consectetur, non nisi tempora sit possimus dignissimos
                         doloremque dolorem doloribus, eos deserunt similique a quisquam, sed veniam?</p>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
 
     <footer class="w-full h-auto bg-gray-50 px-6 space-y-2 mt-16" id="sobre_nosotros">
         <p class="text-lg">About Us</p>
-        <p class="text-sm text-gray-300">About Us</p>
-        <p class="text-sm text-gray-300">Investors</p>
-        <p class="text-sm text-gray-300">Privacy policy</p>
-        <p class="text-sm text-gray-300">Terms and conditions</p>
-        <p class="text-sm text-gray-300">Platzi travel, Inc.</p>
-        <p class="text-sm text-gray-300">Follow us</p>
+        <p class="text-sm text-black">About Us</p>
+        <p class="text-sm text-black">Investors</p>
+        <p class="text-sm text-black">Privacy policy</p>
+        <p class="text-sm text-black">Terms and conditions</p>
+        <p class="text-sm text-black">Platzi travel, Inc.</p>
+        <p class="text-sm text-black">Follow us</p>
         <i class="fa-brands fa-twitter text-gray-300 p-1 text-2xl"></i>
         <i class="fa-brands fa-instagram text-gray-300 p-1 text-2xl"></i>
     </footer>
